@@ -4,99 +4,106 @@
 
 @layer base {
   :root {
-    /* Steampunk-inspired dark professional theme (light mode defaults skew dark) */
-    /* Warm charcoal backgrounds, brass/copper primary, oxidized teal accent */
-    --background: 40 10% 8%;
-    --foreground: 40 30% 92%;
+    /* CornerTab Main Brand - Bitcoin Orange & Professional Dark */
+    /* Light mode with high contrast - white backgrounds with dark text */
+    --background: 0 0% 100%;
+    --foreground: 0 0% 10%;
 
-    --card: 40 12% 10%;
-    --card-foreground: 40 30% 92%;
+    --card: 0 0% 96%;
+    --card-foreground: 0 0% 10%;
 
-    --popover: 40 12% 10%;
-    --popover-foreground: 40 30% 92%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 10%;
 
-    /* Copper / brass primary */
-    --primary: 28 55% 45%;
-    --primary-foreground: 40 30% 96%;
+    /* Bitcoin Orange Primary - #f7931a */
+    --primary: 28 95% 54%;
+    --primary-foreground: 0 0% 100%;
 
-    /* Coal secondary surfaces */
-    --secondary: 40 8% 18%;
-    --secondary-foreground: 40 30% 88%;
+    /* Dark gray secondary surfaces */
+    --secondary: 0 0% 20%;
+    --secondary-foreground: 0 0% 96%;
 
-    --muted: 40 8% 18%;
-    --muted-foreground: 40 15% 70%;
+    --muted: 0 0% 96%;
+    --muted-foreground: 0 0% 40%;
 
-    /* Oxidized teal accent */
-    --accent: 184 25% 35%;
-    --accent-foreground: 40 30% 96%;
+    /* Darker accent for supporting elements */
+    --accent: 0 0% 14%;
+    --accent-foreground: 0 0% 100%;
 
-    --destructive: 0 65% 40%;
-    --destructive-foreground: 0 0% 98%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
 
-    /* Bronze borders and rings */
-    --border: 35 15% 22%;
-    --input: 35 15% 22%;
-    --ring: 28 60% 45%;
+    /* Dark borders for definition */
+    --border: 0 0% 88%;
+    --input: 0 0% 88%;
+    --ring: 28 95% 54%;
 
-    --radius: 0.75rem;
+    --radius: 0.5rem;
 
-    /* Legacy Corner theme (kept for compatibility if used via .corner-theme) */
-    --corner-background: 0 0% 6%;
-    --corner-foreground: 120 100% 50%;
-    --corner-card: 0 0% 10%;
-    --corner-primary: 0 100% 50%;
-    --corner-accent: 60 100% 50%;
-    --corner-border: 120 30% 20%;
+    /* The Corner Sub-Brand - Neon & True Black */
+    --corner-background: 0 0% 0%;
+    --corner-foreground: 0 0% 100%;
+    --corner-card: 0 0% 5%;
+    /* Bright neon orange - #ff6b00 */
+    --corner-primary: 25 100% 50%;
+    /* Acid green accent - #39ff14 */
+    --corner-accent: 105 100% 54%;
+    --corner-border: 25 100% 30%;
+    /* Electric red for highlights - #ff0000 */
+    --corner-red: 0 100% 50%;
 
-    /* Sidebar tokens aligned to steampunk palette */
-    --sidebar-background: 40 12% 10%;
-    --sidebar-foreground: 40 30% 88%;
-    --sidebar-primary: 28 55% 45%;
-    --sidebar-primary-foreground: 40 30% 96%;
-    --sidebar-accent: 184 20% 22%;
-    --sidebar-accent-foreground: 40 30% 92%;
-    --sidebar-border: 35 15% 22%;
-    --sidebar-ring: 28 60% 45%;
+    /* Sidebar tokens aligned to main brand */
+    --sidebar-background: 0 0% 96%;
+    --sidebar-foreground: 0 0% 10%;
+    --sidebar-primary: 28 95% 54%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 0 0% 90%;
+    --sidebar-accent-foreground: 0 0% 10%;
+    --sidebar-border: 0 0% 88%;
+    --sidebar-ring: 28 95% 54%;
   }
 
   .dark {
-    /* Dark mode – deeper surfaces but keep strong contrast */
-    --background: 40 10% 6%;
-    --foreground: 40 30% 92%;
+    /* Dark mode – Deep charcoal with Bitcoin orange accents */
+    /* Maximum contrast: white text on near-black backgrounds */
+    --background: 0 0% 6%;
+    --foreground: 0 0% 100%;
 
-    --card: 40 12% 8%;
-    --card-foreground: 40 30% 92%;
+    --card: 0 0% 10%;
+    --card-foreground: 0 0% 100%;
 
-    --popover: 40 12% 8%;
-    --popover-foreground: 40 30% 92%;
+    --popover: 0 0% 10%;
+    --popover-foreground: 0 0% 100%;
 
-    --primary: 28 60% 48%;
-    --primary-foreground: 40 30% 98%;
+    /* Bitcoin Orange - slightly brighter in dark mode */
+    --primary: 28 95% 56%;
+    --primary-foreground: 0 0% 0%;
 
-    --secondary: 40 8% 14%;
-    --secondary-foreground: 40 30% 90%;
+    /* Dark gray secondary */
+    --secondary: 0 0% 20%;
+    --secondary-foreground: 0 0% 100%;
 
-    --muted: 40 8% 14%;
-    --muted-foreground: 40 15% 68%;
+    --muted: 0 0% 14%;
+    --muted-foreground: 0 0% 70%;
 
-    --accent: 184 25% 32%;
-    --accent-foreground: 40 30% 96%;
+    --accent: 0 0% 16%;
+    --accent-foreground: 0 0% 100%;
 
-    --destructive: 0 62% 38%;
-    --destructive-foreground: 0 0% 98%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
 
-    --border: 35 15% 20%;
-    --input: 35 15% 18%;
-    --ring: 28 60% 48%;
+    --border: 0 0% 20%;
+    --input: 0 0% 14%;
+    --ring: 28 95% 56%;
 
-    --sidebar-background: 40 10% 6%;
-    --sidebar-foreground: 40 30% 90%;
-    --sidebar-primary: 28 60% 48%;
-    --sidebar-primary-foreground: 40 30% 98%;
-    --sidebar-accent: 184 20% 18%;
-    --sidebar-accent-foreground: 40 30% 90%;
-    --sidebar-border: 35 15% 20%;
-    --sidebar-ring: 28 60% 48%;
+    --sidebar-background: 0 0% 6%;
+    --sidebar-foreground: 0 0% 100%;
+    --sidebar-primary: 28 95% 56%;
+    --sidebar-primary-foreground: 0 0% 0%;
+    --sidebar-accent: 0 0% 14%;
+    --sidebar-accent-foreground: 0 0% 100%;
+    --sidebar-border: 0 0% 20%;
+    --sidebar-ring: 28 95% 56%;
   }
 }
 
@@ -116,36 +123,41 @@
 }
 
 @layer components {
-  /* Premium gradient backgrounds tuned to new palette */
+  /* Bitcoin Orange gradient backgrounds */
   .gradient-bg {
-    background: linear-gradient(135deg, hsl(var(--primary)/0.10) 0%, hsl(var(--accent)/0.10) 100%);
+    background: linear-gradient(135deg, hsl(var(--primary)/0.15) 0%, hsl(var(--accent)/0.05) 100%);
   }
 
   .gradient-text {
-    background: linear-gradient(135deg, hsl(var(--primary)) 0%, hsl(var(--accent)) 100%);
+    background: linear-gradient(135deg, hsl(var(--primary)) 0%, hsl(28 85% 45%) 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
   }
 
-  /* Subtle glass morphism (adjusted for dark surfaces) */
+  /* Glass morphism with high contrast */
   .glass {
-    background: rgba(255, 255, 255, 0.04);
+    background: rgba(0, 0, 0, 0.04);
     backdrop-filter: blur(10px);
+    border: 1px solid rgba(0, 0, 0, 0.08);
+  }
+
+  .dark .glass {
+    background: rgba(255, 255, 255, 0.04);
     border: 1px solid rgba(255, 255, 255, 0.08);
   }
 
-  /* Modern hover effects */
+  /* Modern hover effects with Bitcoin orange */
   .hover-lift {
     transition: transform 0.2s ease-out, box-shadow 0.2s ease-out;
   }
 
   .hover-lift:hover {
     transform: translateY(-2px);
-    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.4), 0 10px 10px -5px rgba(0, 0, 0, 0.25);
+    box-shadow: 0 10px 25px -5px hsl(var(--primary)/0.4), 0 10px 10px -5px hsl(var(--primary)/0.2);
   }
 
-  /* The Corner theme overrides (legacy) */
+  /* The Corner theme overrides - Neon & True Black */
   .corner-theme {
     --background: var(--corner-background);
     --foreground: var(--corner-foreground);
@@ -160,19 +172,36 @@
     --ring: var(--corner-primary);
   }
 
-  /* Steampunk vibe accents */
-  .brass-border {
-    box-shadow: 0 0 0 1px hsl(var(--border)), inset 0 0 0 1px hsl(var(--border)/0.5);
+  /* The Corner - Neon glow effects */
+  .corner-glow {
+    text-shadow: 0 0 10px currentColor, 0 0 20px currentColor, 0 0 30px currentColor;
   }
 
-  .brass-glow {
-    box-shadow: 0 0 8px hsl(var(--primary)/0.45), 0 0 2px hsl(var(--primary)/0.7);
+  .corner-border-glow {
+    box-shadow: 0 0 10px hsl(var(--corner-primary)/0.5), 0 0 20px hsl(var(--corner-primary)/0.3);
+    transition: box-shadow 0.3s ease-out;
   }
 
-  .rivet-dots {
-    background-image: radial-gradient(hsl(var(--border)) 1px, transparent 1px);
-    background-size: 10px 10px;
-    background-position: -2px -2px;
+  .corner-border-glow:hover {
+    box-shadow: 0 0 15px hsl(var(--corner-primary)/0.7), 0 0 30px hsl(var(--corner-primary)/0.5), 0 0 45px hsl(var(--corner-primary)/0.3);
+  }
+
+  /* The Corner - Glitch effect for headers */
+  .corner-glitch {
+    position: relative;
+    animation: glitch 3s infinite;
+  }
+
+  @keyframes glitch {
+    0%, 90%, 100% {
+      text-shadow: none;
+    }
+    92% {
+      text-shadow: 2px 0 hsl(var(--corner-primary)), -2px 0 hsl(var(--corner-accent));
+    }
+    94% {
+      text-shadow: -2px 0 hsl(var(--corner-primary)), 2px 0 hsl(var(--corner-accent));
+    }
   }
 
   /* Minimal animations */
@@ -191,28 +220,73 @@
     }
   }
 
-  /* Premium button styles */
+  /* Premium button with Bitcoin orange */
   .btn-premium {
-    background: linear-gradient(135deg, hsl(var(--primary)) 0%, hsl(var(--accent)) 100%);
+    background: hsl(var(--primary));
     transition: all 0.2s ease-out;
+    font-weight: 600;
   }
 
   .btn-premium:hover {
     transform: translateY(-1px);
-    box-shadow: 0 10px 25px -5px hsl(var(--primary)/0.4);
+    box-shadow: 0 10px 25px -5px hsl(var(--primary)/0.5), 0 8px 10px -5px hsl(var(--primary)/0.3);
+    background: hsl(28 95% 58%);
   }
 
-  /* Clean card styles for dark */
+  /* Clean card styles with proper contrast */
   .card-clean {
-    background: rgba(255, 255, 255, 0.04);
-    backdrop-filter: blur(10px);
-    border: 1px solid rgba(255, 255, 255, 0.08);
+    background: hsl(var(--card));
+    border: 1px solid hsl(var(--border));
     transition: all 0.2s ease-out;
   }
 
   .card-clean:hover {
-    background: rgba(255, 255, 255, 0.06);
+    border-color: hsl(var(--primary)/0.5);
     transform: translateY(-2px);
-    box-shadow: 0 20px 40px -10px rgba(0, 0, 0, 0.45);
+    box-shadow: 0 20px 40px -10px rgba(0, 0, 0, 0.15);
+  }
+
+  .dark .card-clean:hover {
+    box-shadow: 0 20px 40px -10px rgba(0, 0, 0, 0.6);
+  }
+
+  /* High contrast link styles */
+  .link-bitcoin {
+    color: hsl(var(--primary));
+    text-decoration: underline;
+    text-underline-offset: 2px;
+    font-weight: 600;
+    transition: all 0.2s ease-out;
+  }
+
+  .link-bitcoin:hover {
+    text-decoration-thickness: 2px;
+    color: hsl(28 95% 58%);
+  }
+
+  /* Future grid background pattern */
+  .future-grid {
+    background-image:
+      linear-gradient(to right, hsl(var(--border)) 1px, transparent 1px),
+      linear-gradient(to bottom, hsl(var(--border)) 1px, transparent 1px);
+    background-size: 40px 40px;
+  }
+
+  /* Accessibility - ensure all interactive elements have clear focus states */
+  .focus-bitcoin:focus-visible {
+    outline: 2px solid hsl(var(--primary));
+    outline-offset: 2px;
+  }
+
+  /* Form inputs with Bitcoin orange highlight */
+  .input-bitcoin {
+    border: 2px solid hsl(var(--border));
+    transition: border-color 0.2s ease-out;
+  }
+
+  .input-bitcoin:focus {
+    border-color: hsl(var(--primary));
+    outline: none;
+    box-shadow: 0 0 0 3px hsl(var(--primary)/0.1);
   }
 }
