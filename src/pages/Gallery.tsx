@@ -20,126 +20,36 @@ const Gallery = () => {
 
   useSeoMeta({
     title: 'Gallery - CornerTab',
-    description: 'Curated collection of visual artifacts celebrating optimism, building, and the future we\'re creating together.',
+    description: 'Multi-artist marketplace. Digital art, physical art, photography, music—all content types welcome. Artists keep 100% of sales.',
   });
 
   const categories = [
-    { id: 'all', label: 'All Works', count: 89 },
-    { id: 'photography', label: 'Photography', count: 34 },
-    { id: 'illustrations', label: 'Illustrations', count: 22 },
-    { id: 'design', label: 'Design', count: 18 },
-    { id: 'architecture', label: 'Architecture', count: 15 },
+    { id: 'all', label: 'All Works', count: 0 },
+    { id: 'digital-art', label: 'Digital Art', count: 0 },
+    { id: 'photography', label: 'Photography', count: 0 },
+    { id: 'music', label: 'Music', count: 0 },
+    { id: 'mixed-media', label: 'Mixed Media', count: 0 },
   ];
 
   // Mock gallery items - in real app this would come from Nostr
   const works = [
     {
       id: '1',
-      title: 'Building Tomorrow',
-      description: 'Architectural visualization of sustainable communities designed for resilience and optimism. A vision of what we can build together.',
-      artist: 'FutureArchitect',
-      artistPubkey: 'npub1architect123...',
-      category: 'architecture',
-      tags: ['building', 'community', 'future'],
-      createdAt: '2024-01-15',
-      views: 1247,
-      likes: 89,
-      downloads: 23,
+      title: 'Artist Profile - SMiCEk',
+      description: 'SMiCEk - Founding artist at CornerTab. Digital art, design, and creative direction. All work available through direct Bitcoin payments with zero middlemen.',
+      artist: 'SMiCEk',
+      artistPubkey: 'npub10ulttdz8zep5asqm7nd35u3xmp7z5jhkut39q5ewc8ejwnk3vstql9gmm8',
+      category: 'digital-art',
+      tags: ['artist', 'featured', 'nostr-native'],
+      createdAt: 'Coming Soon',
+      views: 0,
+      likes: 0,
+      downloads: 0,
       featured: true,
-      resolution: '3840x2160',
-      fileSize: '2.4 MB',
-      format: 'PNG',
-      license: 'CC BY-SA',
-    },
-    {
-      id: '2',
-      title: 'Golden Hour Builders',
-      description: 'Photography series capturing builders and creators at work during golden hour, celebrating the beauty of construction and creation.',
-      artist: 'LightCapture',
-      artistPubkey: 'npub1photo456...',
-      category: 'photography',
-      tags: ['builders', 'golden-hour', 'work'],
-      createdAt: '2024-01-14',
-      views: 892,
-      likes: 67,
-      downloads: 45,
-      featured: false,
-      resolution: '1920x1080',
-      fileSize: '1.8 MB',
-      format: 'JPG',
-      license: 'CC0',
-    },
-    {
-      id: '3',
-      title: 'Optimistic Horizons',
-      description: 'Digital illustration depicting bright horizons and expanding possibilities, embodying the spirit of hope and forward momentum.',
-      artist: 'HopeDesigner',
-      artistPubkey: 'npub1hope789...',
-      category: 'illustrations',
-      tags: ['optimism', 'horizon', 'hope'],
-      createdAt: '2024-01-12',
-      views: 1456,
-      likes: 124,
-      downloads: 67,
-      featured: true,
-      resolution: '2560x1440',
-      fileSize: '3.1 MB',
-      format: 'PNG',
-      license: 'CC BY',
-    },
-    {
-      id: '4',
-      title: 'The Builder\'s Portrait',
-      description: 'Stylized portrait celebrating the modern builder - someone who creates value and builds for the future rather than destroys.',
-      artist: 'PortraitMaker',
-      artistPubkey: 'npub1portrait012...',
-      category: 'illustrations',
-      tags: ['builder', 'portrait', 'creation'],
-      createdAt: '2024-01-10',
-      views: 734,
-      likes: 56,
-      downloads: 34,
-      featured: false,
-      resolution: '1080x1080',
-      fileSize: '1.2 MB',
-      format: 'PNG',
-      license: 'CC BY-NC',
-    },
-    {
-      id: '5',
-      title: 'Network of Builders',
-      description: 'Beautiful visualization of interconnected builders and creators forming supportive networks across the globe.',
-      artist: 'NetworkViz',
-      artistPubkey: 'npub1network345...',
-      category: 'design',
-      tags: ['network', 'builders', 'connection'],
-      createdAt: '2024-01-08',
-      views: 623,
-      likes: 41,
-      downloads: 19,
-      featured: false,
-      resolution: '4096x2304',
-      fileSize: '4.2 MB',
-      format: 'PNG',
-      license: 'CC BY-SA',
-    },
-    {
-      id: '6',
-      title: 'Sustainable Futures',
-      description: 'Architectural concept showing integration of nature and technology in future-focused building design.',
-      artist: 'EcoArchitect',
-      artistPubkey: 'npub1eco678...',
-      category: 'architecture',
-      tags: ['sustainable', 'nature', 'future'],
-      createdAt: '2024-01-06',
-      views: 445,
-      likes: 32,
-      downloads: 15,
-      featured: false,
-      resolution: '1920x1080',
-      fileSize: '2.7 MB',
-      format: 'PNG',
-      license: 'CC0',
+      resolution: 'Various',
+      fileSize: 'N/A',
+      format: 'All',
+      license: 'Artist Choice',
     },
   ];
 
@@ -161,8 +71,8 @@ const Gallery = () => {
           <h1 className="text-4xl md:text-5xl font-bold mb-4">
             <span className="gradient-text">Gallery</span>
           </h1>
-          <p className="text-lg text-gray-600 max-w-2xl mx-auto font-light">
-            Visual artifacts celebrating optimism, building, and the future we're creating
+          <p className="text-lg text-muted-foreground max-w-2xl mx-auto font-light">
+            Digital art, physical art, photography, music—all content types welcome. Direct sales. Bitcoin payments. Artists link their Nostr profiles.
           </p>
         </div>
 
@@ -395,27 +305,27 @@ const Gallery = () => {
           {/* Sidebar */}
           <div className="space-y-6">
             {/* Gallery Stats */}
-            <Card className="bg-black/50 border-green-500/30">
+            <Card className="bg-muted/30 border-border">
               <CardContent className="p-4">
-                <h3 className="text-green-500 font-mono text-lg font-bold mb-4">
+                <h3 className="text-foreground font-mono text-lg font-bold mb-4">
                   GALLERY STATS
                 </h3>
                 <div className="space-y-3">
                   <div className="flex justify-between items-center text-sm font-mono">
-                    <span className="text-green-400/70">Total Works</span>
-                    <span className="text-green-500 font-bold">89</span>
+                    <span className="text-muted-foreground">Total Works</span>
+                    <span className="text-primary font-bold">0</span>
                   </div>
                   <div className="flex justify-between items-center text-sm font-mono">
-                    <span className="text-green-400/70">Artists</span>
-                    <span className="text-green-500 font-bold">34</span>
+                    <span className="text-muted-foreground">Artists</span>
+                    <span className="text-primary font-bold">0</span>
                   </div>
                   <div className="flex justify-between items-center text-sm font-mono">
-                    <span className="text-green-400/70">Total Views</span>
-                    <span className="text-green-500 font-bold">45.2K</span>
+                    <span className="text-muted-foreground">Coming Soon</span>
+                    <span className="text-primary font-bold">Launching</span>
                   </div>
                   <div className="flex justify-between items-center text-sm font-mono">
-                    <span className="text-green-400/70">Downloads</span>
-                    <span className="text-green-500 font-bold">2.8K</span>
+                    <span className="text-muted-foreground">Artist Cut</span>
+                    <span className="text-primary font-bold">100%</span>
                   </div>
                 </div>
               </CardContent>

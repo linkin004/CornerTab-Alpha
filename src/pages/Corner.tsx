@@ -18,59 +18,23 @@ const Corner = () => {
   const cornerPosts = [
     {
       id: '1',
-      title: 'Inflation Ate My Future and All I Got Was This $99 T-Shirt',
-      content: 'Remember when $99 could buy groceries for a week? Now it barely covers a designer tee that says "I survived the money printer." Peak irony.',
-      author: 'MoneyPrinterGoBrr',
-      category: 'Economic Satire',
-      tags: ['inflation', 'fashion', 'irony'],
-      likes: 420,
-      comments: 69,
-      timestamp: '2h ago',
+      title: 'Coming Soon',
+      content: 'Biting commentary on the absurdity of broken systems. Justice through freedom technology meets comedic relief. SMiCEk publishing content attacking the egregious ways individuals have taken advantage of this broken system—with comedic relief acknowledging how ridiculous it all is.',
+      author: 'SMiCEk',
+      category: 'System Critique',
+      tags: ['justice', 'freedom', 'technology'],
+      likes: 0,
+      comments: 0,
+      timestamp: 'Coming Soon',
       featured: true,
-    },
-    {
-      id: '2',
-      title: 'In Case of Money Printer, Break Glass',
-      content: 'New emergency kit just dropped: Contains one (1) wheelbarrow, instructions for burning cash for warmth, and a "How to Barter" handbook.',
-      author: 'WeimarRepeat',
-      category: 'Dark Humor',
-      tags: ['hyperinflation', 'emergency', 'history'],
-      likes: 666,
-      comments: 88,
-      timestamp: '4h ago',
-      featured: true,
-    },
-    {
-      id: '3',
-      title: 'LinkedIn Influencers Discover "Hustle Culture" is Just Poverty with Better Marketing',
-      content: 'Breaking: Local LinkedIn thought leader realizes "rise and grind" is just what poor people call working three jobs.',
-      author: 'CorporateCringe',
-      category: 'Social Commentary',
-      tags: ['linkedin', 'hustle', 'poverty'],
-      likes: 1337,
-      comments: 156,
-      timestamp: '6h ago',
-      featured: false,
-    },
-    {
-      id: '4',
-      title: 'NFT Bros Pivot to "Digital Minimalism" After Losing Life Savings',
-      content: 'Former JPEG collectors now selling courses on "intentional living" and "mindful spending." The grift never stops.',
-      author: 'CryptoRealist',
-      category: 'Crypto Roast',
-      tags: ['nft', 'minimalism', 'grift'],
-      likes: 892,
-      comments: 203,
-      timestamp: '8h ago',
-      featured: false,
     },
   ];
 
   const cornerStats = [
-    { label: 'Truth Bombs Dropped', value: '∞', icon: Bomb },
-    { label: 'Sacred Cows Slaughtered', value: '2,847', icon: Target },
-    { label: 'Feelings Hurt', value: '420k', icon: Flame },
-    { label: 'Reality Checks Issued', value: '69k', icon: Skull },
+    { label: 'Truth Bombs Dropped', value: '0', icon: Bomb },
+    { label: 'Systems Exposed', value: '0', icon: Target },
+    { label: 'Injustices Called Out', value: '0', icon: Flame },
+    { label: 'Solutions Proposed', value: '0', icon: Skull },
   ];
 
   const filteredPosts = cornerPosts.filter(post =>
@@ -155,7 +119,7 @@ const Corner = () => {
         <section className="py-12">
           <div className="container mx-auto px-4">
             <h2 className="text-3xl font-mono font-bold text-[#ff6b00] corner-glow mb-8 text-center">
-              FEATURED CHAOS
+              FEATURED CONTENT
             </h2>
             <div className="grid md:grid-cols-2 gap-8 mb-12">
               {filteredPosts.filter(post => post.featured).map(post => (
@@ -191,50 +155,6 @@ const Corner = () => {
                             #{tag}
                           </Badge>
                         ))}
-                      </div>
-                    </div>
-                  </CardContent>
-                </Card>
-              ))}
-            </div>
-
-            {/* Regular Posts */}
-            <h3 className="text-2xl font-mono font-bold text-[#39ff14] corner-glow mb-6">
-              MORE TRUTH BOMBS
-            </h3>
-            <div className="space-y-6">
-              {filteredPosts.filter(post => !post.featured).map(post => (
-                <Card key={post.id} className="bg-black/60 border-2 border-[#ff6b00]/20 hover:border-[#ff6b00]/50 transition-all duration-300">
-                  <CardContent className="p-6">
-                    <div className="flex items-start justify-between mb-4">
-                      <div className="flex-1">
-                        <div className="flex items-center space-x-3 mb-2">
-                          <Badge variant="outline" className="border-[#39ff14]/50 text-[#39ff14] font-mono text-xs font-bold">
-                            {post.category}
-                          </Badge>
-                          <span className="text-xs text-white/70 font-mono font-semibold">{post.timestamp}</span>
-                        </div>
-                        <h3 className="text-lg font-mono font-bold text-[#ff6b00] mb-2 leading-tight">
-                          {post.title}
-                        </h3>
-                        <p className="text-white font-mono text-sm leading-relaxed">
-                          {post.content}
-                        </p>
-                      </div>
-                    </div>
-                    <div className="flex items-center justify-between">
-                      <div className="text-sm text-[#39ff14] font-mono font-bold">
-                        by {post.author}
-                      </div>
-                      <div className="flex items-center space-x-4 text-sm text-white font-mono font-semibold">
-                        <span className="flex items-center space-x-1">
-                          <Flame className="h-3 w-3 text-[#ff0000] corner-glow" />
-                          <span>{post.likes}</span>
-                        </span>
-                        <span className="flex items-center space-x-1">
-                          <TrendingDown className="h-3 w-3 text-[#39ff14]" />
-                          <span>{post.comments}</span>
-                        </span>
                       </div>
                     </div>
                   </CardContent>

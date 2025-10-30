@@ -19,70 +19,31 @@ const Articles = () => {
 
   useSeoMeta({
     title: 'Articles - CornerTab',
-    description: 'Thoughtful articles on rebuilding, optimism, and preparing for what comes next.',
+    description: 'Bitcoin, entrepreneurship, culture, and technology. Solution-oriented writing for creators building independent futures.',
   });
 
   const categories = [
-    { id: 'all', label: 'All Articles', count: 42 },
-    { id: 'rebuilding', label: 'Rebuilding', count: 15 },
-    { id: 'future', label: 'Future Building', count: 12 },
-    { id: 'optimism', label: 'Optimism', count: 8 },
-    { id: 'culture', label: 'Culture', count: 7 },
+    { id: 'all', label: 'All Articles', count: 0 },
+    { id: 'bitcoin', label: 'Bitcoin', count: 0 },
+    { id: 'entrepreneurship', label: 'Entrepreneurship', count: 0 },
+    { id: 'culture', label: 'Culture & Lifestyle', count: 0 },
+    { id: 'technology', label: 'Technology', count: 0 },
   ];
 
-  // Mock articles data - in real app this would come from Nostr
+  // Mock articles data - in real app this would come from Nostr kind 30023
   const articles = [
     {
       id: '1',
-      title: 'The Builder\'s Manifesto: Creating Tomorrow Today',
-      excerpt: 'In a world focused on tearing down, we choose to build up. This manifesto outlines the principles of constructive optimism and how individual builders can shape the future through intentional creation...',
-      author: 'Future Builder',
-      authorPubkey: 'npub1builder123...',
-      publishedAt: '2024-01-15',
-      readTime: '8 min',
-      category: 'rebuilding',
-      tags: ['building', 'manifesto', 'optimism'],
-      comments: 23,
+      title: 'Coming Soon',
+      excerpt: 'New articles from SMiCEk and guest writers coming soon. Articles will cover Bitcoin, entrepreneurship, culture, and technology with a focus on freedom and independence.',
+      author: 'SMiCEk',
+      authorPubkey: 'npub10ulttdz8zep5asqm7nd35u3xmp7z5jhkut39q5ewc8ejwnk3vstql9gmm8',
+      publishedAt: 'Coming Soon',
+      readTime: '-- min',
+      category: 'bitcoin',
+      tags: ['coming-soon', 'articles'],
+      comments: 0,
       featured: true,
-    },
-    {
-      id: '2',
-      title: 'Designing for a Harder Future Currency',
-      excerpt: 'As traditional monetary systems face unprecedented challenges, how do we prepare products, services, and lifestyles for a world where money works differently?',
-      author: 'Economic Designer',
-      authorPubkey: 'npub1economic456...',
-      publishedAt: '2024-01-12',
-      readTime: '12 min',
-      category: 'future',
-      tags: ['currency', 'design', 'preparation'],
-      comments: 15,
-      featured: false,
-    },
-    {
-      id: '3',
-      title: 'Cultural Stewardship in the Digital Age',
-      excerpt: 'How do we preserve and nurture positive culture while embracing technological progress? Exploring the balance between innovation and tradition in building sustainable communities...',
-      author: 'Culture Keeper',
-      authorPubkey: 'npub1culture789...',
-      publishedAt: '2024-01-10',
-      readTime: '6 min',
-      category: 'culture',
-      tags: ['culture', 'stewardship', 'community'],
-      comments: 31,
-      featured: false,
-    },
-    {
-      id: '4',
-      title: 'The Optimist\'s Guide to Uncertainty',
-      excerpt: 'Practical strategies for maintaining hope and forward momentum when the future feels unclear. How to channel uncertainty into creative energy for building better systems...',
-      author: 'Hope Architect',
-      authorPubkey: 'npub1hope012...',
-      publishedAt: '2024-01-08',
-      readTime: '15 min',
-      category: 'optimism',
-      tags: ['hope', 'uncertainty', 'resilience'],
-      comments: 8,
-      featured: false,
     },
   ];
 
@@ -104,8 +65,8 @@ const Articles = () => {
           <h1 className="text-4xl md:text-5xl font-bold mb-4">
             <span className="gradient-text">Articles</span>
           </h1>
-          <p className="text-lg text-gray-600 max-w-2xl mx-auto font-light">
-            Thoughtful insights for builders and optimists shaping tomorrow
+          <p className="text-lg text-muted-foreground max-w-2xl mx-auto font-light">
+            Solution-oriented writing on Bitcoin, entrepreneurship, culture, and technology. Building independent futures through knowledge and action.
           </p>
         </div>
 
@@ -290,26 +251,26 @@ const Articles = () => {
             {/* Quick Stats */}
             <Card className="card-clean border-0 shadow-sm">
               <CardHeader>
-                <CardTitle className="text-gray-900 text-lg font-semibold">
+                <CardTitle className="text-foreground text-lg font-semibold">
                   Community Stats
                 </CardTitle>
               </CardHeader>
               <CardContent className="space-y-4">
                 <div className="flex justify-between items-center">
-                  <span className="text-gray-600 text-sm">Total Articles</span>
-                  <span className="text-blue-600 font-bold">42</span>
+                  <span className="text-muted-foreground text-sm">Total Articles</span>
+                  <span className="text-primary font-bold">0</span>
                 </div>
                 <div className="flex justify-between items-center">
-                  <span className="text-gray-600 text-sm">Active Writers</span>
-                  <span className="text-blue-600 font-bold">127</span>
+                  <span className="text-muted-foreground text-sm">Active Writers</span>
+                  <span className="text-primary font-bold">0</span>
                 </div>
                 <div className="flex justify-between items-center">
-                  <span className="text-gray-600 text-sm">Comments</span>
-                  <span className="text-blue-600 font-bold">1,847</span>
+                  <span className="text-muted-foreground text-sm">Comments</span>
+                  <span className="text-primary font-bold">0</span>
                 </div>
                 <div className="flex justify-between items-center">
-                  <span className="text-gray-600 text-sm">Engagement</span>
-                  <span className="text-green-600 font-bold">+23%</span>
+                  <span className="text-muted-foreground text-sm">Publishing Soon</span>
+                  <span className="text-primary font-bold">Monthly</span>
                 </div>
               </CardContent>
             </Card>

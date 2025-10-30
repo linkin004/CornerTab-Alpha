@@ -1,5 +1,5 @@
 import { useSeoMeta } from '@unhead/react';
-import { TrendingUp, Users, Zap, ArrowRight, Sparkles, Building, Globe } from 'lucide-react';
+import { TrendingUp, Users, Zap, ArrowRight, Sparkles, Building, Globe, MessageSquare } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { Layout } from '@/components/Layout';
 import { Button } from '@/components/ui/button';
@@ -8,38 +8,38 @@ import { Badge } from '@/components/ui/badge';
 
 const Index = () => {
   useSeoMeta({
-    title: 'CornerTab - Artifacts for What Comes Next',
-    description: 'A lifestyle brand for a harder future currency. Discover articles, marketplace, and gallery celebrating rebuilding and optimism.',
+    title: 'CornerTab - Helping Creators Exit a Broken System',
+    description: 'Citizens Opting to Reject Normalized Robbery Through Adopting Bitcoin. A media and retail marketplace empowering artists with sound money, independent commerce, and the freedom to keep what they earn.',
   });
 
   const features = [
     {
       icon: Building,
-      title: 'Rebuilding Culture',
-      description: 'Curated content and artifacts that inspire construction over destruction, building over breaking.',
+      title: 'Sound Money',
+      description: 'Built on Bitcoin and layer 2 innovations. Accept payments directly, keep 100% of your earnings, and own your economic future.',
     },
     {
       icon: TrendingUp,
-      title: 'Future-Forward',
-      description: 'Premium products and insights designed for those preparing for what comes next.',
+      title: 'Independent Commerce',
+      description: 'Sell your art without middlemen taking their cut. Direct to audience. Direct payment. Direct freedom.',
     },
     {
       icon: Users,
-      title: 'Community Driven',
-      description: 'A collective of builders, creators, and optimists shaping tomorrow together.',
+      title: 'Own Your Audience',
+      description: 'Your community is yours. No algorithms deciding your reach. No platforms that can deplatform you. Built on Nostr.',
     },
     {
       icon: Sparkles,
-      title: 'Premium Quality',
-      description: 'Carefully crafted experiences and products that reflect our commitment to excellence.',
+      title: 'Freedom Technology',
+      description: 'Leveraging Bitcoin and decentralized protocols to enable creators worldwide to build independently and sustainably.',
     },
   ];
 
   const stats = [
-    { label: 'Active Builders', value: '12,847', icon: Users },
-    { label: 'Articles Published', value: '2,340', icon: Building },
-    { label: 'Products Listed', value: '567', icon: TrendingUp },
-    { label: 'Community Growth', value: '+127%', icon: Sparkles },
+    { label: 'Active Builders', value: '0', icon: Users },
+    { label: 'Articles Published', value: '0', icon: Building },
+    { label: 'Products Listed', value: '0', icon: TrendingUp },
+    { label: 'Community Growth', value: '∞', icon: Sparkles },
   ];
 
   return (
@@ -50,15 +50,15 @@ const Index = () => {
         <div className="container mx-auto px-4 relative z-10">
           <div className="text-center max-w-4xl mx-auto fade-in-up">
             <Badge className="mb-6 bg-primary/10 text-primary hover:bg-primary/20 border-primary/30 font-semibold">
-              Building Tomorrow Today
+              Citizens Opting to Reject Normalized Robbery Through Adopting Bitcoin
             </Badge>
             <h1 className="text-5xl md:text-7xl font-bold mb-6 tracking-tight">
-              <span className="text-primary">Corner</span>
-              <span className="text-foreground">Tab</span>
+              <span className="text-primary">Helping Creators</span><br />
+              <span className="text-foreground">Exit a Broken System</span>
             </h1>
             <p className="text-xl md:text-2xl text-muted-foreground mb-8 leading-relaxed font-light">
-              Artifacts for what comes next.<br />
-              <span className="text-primary font-semibold">Wear the rebuild.</span>
+              Through sound money, independent commerce, and art that tells the truth.<br />
+              <span className="text-primary font-semibold">Your designs. Your shop. Your rules.</span>
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button
@@ -113,10 +113,10 @@ const Index = () => {
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-              Built for <span className="gradient-text">Tomorrow</span>
+              Why <span className="gradient-text">CornerTab?</span>
             </h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto font-light">
-              Every piece designed with intention, every experience crafted for those building the future.
+              No middlemen taking cuts. No algorithms controlling your reach. No platforms that can deplatform you. Just direct commerce, direct freedom, and direct impact.
             </p>
           </div>
 
@@ -154,8 +154,8 @@ const Index = () => {
               Enter <span className="text-red-500 corner-glow">The Corner</span>
             </h2>
             <p className="text-lg text-gray-300 mb-8 leading-relaxed">
-              Where the sharper bite lives. Satirical takes, meme-heavy content, and biting commentary
-              on the state of everything. Not for the faint of heart.
+              Where justice through freedom technology meets comedic relief. Biting commentary on the absurdity of broken systems.
+              Angry. Frustrated. Absolutely honest. But we'll laugh about how ridiculous it all is.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
               <Button
@@ -168,24 +168,43 @@ const Index = () => {
                 </Link>
               </Button>
               <p className="text-sm text-red-400 font-mono font-semibold">
-                "Inflation ate my future and all I got was this $99 t-shirt."
+                "Where anger meets comedy, justice meets absurdity."
               </p>
             </div>
           </div>
         </div>
       </section>
 
-      {/* CTA Section */}
+      {/* Getting Started CTA Section */}
       <section className="py-20 gradient-bg">
         <div className="container mx-auto px-4">
           <div className="text-center max-w-3xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">
-              Ready to Build?
+              Ready to Take Control?
             </h2>
-            <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
-              Join thousands of builders, creators, and optimists who are actively shaping tomorrow.
-              <br />
-              <span className="text-primary font-semibold">The future needs more builders, not critics.</span>
+            <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
+              <span className="font-semibold text-foreground">Start your path to independence:</span>
+            </p>
+            <div className="max-w-2xl mx-auto mb-8 text-left space-y-3">
+              <div className="flex items-start space-x-3">
+                <Badge className="bg-primary text-white font-bold mt-1">1</Badge>
+                <p className="text-muted-foreground">Sign up for Nostr (use <span className="font-semibold text-foreground">Primal</span> or your client of choice)</p>
+              </div>
+              <div className="flex items-start space-x-3">
+                <Badge className="bg-primary text-white font-bold mt-1">2</Badge>
+                <p className="text-muted-foreground">Set up a Bitcoin wallet to receive payments directly</p>
+              </div>
+              <div className="flex items-start space-x-3">
+                <Badge className="bg-primary text-white font-bold mt-1">3</Badge>
+                <p className="text-muted-foreground">List your art on CornerTab and start selling without middlemen</p>
+              </div>
+              <div className="flex items-start space-x-3">
+                <Badge className="bg-primary text-white font-bold mt-1">4</Badge>
+                <p className="text-muted-foreground">Build your community on Nostr—it's <span className="font-semibold text-foreground">yours</span>, not ours</p>
+              </div>
+            </div>
+            <p className="text-sm text-muted-foreground mb-8 italic">
+              No equity required. No growth targets. No exit strategy—we're already out.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button
@@ -210,6 +229,33 @@ const Index = () => {
                 </Link>
               </Button>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Community Section */}
+      <section className="py-20 bg-muted/30 border-y border-border">
+        <div className="container mx-auto px-4">
+          <div className="max-w-3xl mx-auto text-center">
+            <div className="inline-flex p-3 rounded-xl bg-primary/10 text-primary mb-6">
+              <MessageSquare className="h-8 w-8" />
+            </div>
+            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
+              Join the Community
+            </h2>
+            <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
+              Connect with other creators, builders, and freedom-focused individuals.
+              <br />
+              <span className="text-primary font-semibold">Discord server coming soon.</span>
+            </p>
+            <Button
+              disabled
+              size="lg"
+              className="btn-premium text-white font-semibold px-8 opacity-60"
+            >
+              <MessageSquare className="h-5 w-5 mr-2" />
+              <span>Join Discord (Coming Soon)</span>
+            </Button>
           </div>
         </div>
       </section>

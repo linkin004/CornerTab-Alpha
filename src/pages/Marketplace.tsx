@@ -19,97 +19,34 @@ const Marketplace = () => {
 
   useSeoMeta({
     title: 'Marketplace - CornerTab',
-    description: 'Premium artifacts and products for those building tomorrow. Quality items for a harder future currency.',
+    description: 'Artist marketplace. Direct sales. Bitcoin payments. No middlemen. Keep 100% of your earnings.',
   });
 
   const categories = [
-    { id: 'all', label: 'All Items', count: 156 },
-    { id: 'apparel', label: 'Apparel', count: 42 },
-    { id: 'accessories', label: 'Accessories', count: 38 },
-    { id: 'books', label: 'Books', count: 29 },
-    { id: 'art', label: 'Art & Prints', count: 24 },
-    { id: 'lifestyle', label: 'Lifestyle', count: 23 },
+    { id: 'all', label: 'All Items', count: 0 },
+    { id: 'apparel', label: 'Apparel', count: 0 },
+    { id: 'stickers', label: 'Stickers', count: 0 },
   ];
 
   // Mock marketplace items - in real app this would come from Nostr
   const items = [
     {
       id: '1',
-      title: '"Wear the Rebuild" Premium T-Shirt',
-      description: 'Premium organic cotton tee featuring our signature "Wear the Rebuild" design. Crafted for builders who value quality and purpose.',
-      price: '0.00125 BTC',
-      priceUsd: '$45',
+      title: 'Test Shirt',
+      description: 'Coming soon. More details to follow as we launch the marketplace.',
+      price: 'Coming Soon',
+      priceUsd: 'Coming Soon',
       seller: 'CornerTab',
-      sellerPubkey: 'npub1cornertab123...',
-      rating: 4.9,
-      reviews: 127,
+      sellerPubkey: 'npub1gqhqt37mav34schmdnjzdlpt9ftzgrxfhk8rnune8ktqynekpt0qkaujgz',
+      rating: 5.0,
+      reviews: 0,
       location: 'Global',
       category: 'apparel',
-      tags: ['tshirt', 'rebuild', 'premium'],
+      tags: ['coming-soon', 'test-product'],
       images: ['/api/placeholder/400/300'],
-      listedAt: '2024-01-15',
-      views: 234,
+      listedAt: 'Coming Soon',
+      views: 0,
       featured: true,
-      condition: 'New',
-      shipping: 'Worldwide',
-    },
-    {
-      id: '2',
-      title: 'Builder\'s Journal - Hardcover',
-      description: 'Premium leather-bound journal for documenting your building journey. 200 pages of high-quality paper with inspiring quotes throughout.',
-      price: '0.002 BTC',
-      priceUsd: '$72',
-      seller: 'ArtisanCrafts',
-      sellerPubkey: 'npub1artisan456...',
-      rating: 5.0,
-      reviews: 89,
-      location: 'Handmade',
-      category: 'lifestyle',
-      tags: ['journal', 'building', 'premium'],
-      images: ['/api/placeholder/400/300'],
-      listedAt: '2024-01-14',
-      views: 156,
-      featured: false,
-      condition: 'New',
-      shipping: 'Global',
-    },
-    {
-      id: '3',
-      title: 'Future Currency Handbook',
-      description: 'Essential guide to understanding and preparing for alternative monetary systems. Written by leading economists and builders.',
-      price: '0.0008 BTC',
-      priceUsd: '$29',
-      seller: 'KnowledgePress',
-      sellerPubkey: 'npub1knowledge789...',
-      rating: 4.7,
-      reviews: 45,
-      location: 'Digital',
-      category: 'books',
-      tags: ['currency', 'future', 'education'],
-      images: ['/api/placeholder/400/300'],
-      listedAt: '2024-01-12',
-      views: 89,
-      featured: false,
-      condition: 'New',
-      shipping: 'Instant',
-    },
-    {
-      id: '4',
-      title: 'CornerTab Logo Pin - Limited Edition',
-      description: 'Collectible enamel pin featuring the CornerTab logo. Limited run of 500 pieces, each numbered and authenticated.',
-      price: '0.0035 BTC',
-      priceUsd: '$126',
-      seller: 'CornerTab',
-      sellerPubkey: 'npub1cornertab012...',
-      rating: 4.8,
-      reviews: 67,
-      location: 'Global',
-      category: 'accessories',
-      tags: ['pin', 'collectible', 'limited'],
-      images: ['/api/placeholder/400/300'],
-      listedAt: '2024-01-10',
-      views: 178,
-      featured: false,
       condition: 'New',
       shipping: 'Worldwide',
     },
@@ -133,8 +70,8 @@ const Marketplace = () => {
           <h1 className="text-4xl md:text-5xl font-bold mb-4">
             <span className="gradient-text">Marketplace</span>
           </h1>
-          <p className="text-lg text-gray-600 max-w-2xl mx-auto font-light">
-            Premium artifacts for those building tomorrow
+          <p className="text-lg text-muted-foreground max-w-2xl mx-auto font-light">
+            Direct sales. Bitcoin payments. No middlemen. Keep what you earn.
           </p>
         </div>
 
